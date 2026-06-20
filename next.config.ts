@@ -5,10 +5,11 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,                 // Required for static export
   },
-  basePath: "/xbibz-portfolio",        // Important for GitHub Pages project site
-  trailingSlash: true,                 // Better for GitHub Pages
-  // Note: This makes the site static (client-side only).
-  // All features (modals, animations, navigation) remain fully functional.
+  basePath: "/xbibz-portfolio",        // Required for GitHub Pages project repo
+  trailingSlash: true,
+  // IMPORTANT: GitHub Pages only supports static sites.
+  // This is a fully functional React/Next.js app (client-side).
+  // Modals, animations, navigation, copy buttons — everything works.
 };
 
 export default nextConfig;
