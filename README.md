@@ -1,38 +1,30 @@
 # XBIBZ Portfolio
 
-Modern portfolio website for XBIBZ — Data Scientist & Security Enthusiast.
+Modern portfolio for **XBIBZ** — Data Scientist & Security Enthusiast.
 
-Built with **Next.js 16 + React + TypeScript + Tailwind + Framer Motion**.
+Built with **Next.js 16 + React + TypeScript + Tailwind + Framer Motion + Lottie**.
 
-## ✨ Features
-- Dark modern design matching the original
-- Fully interactive project modals
-- Smooth scrolling navigation
-- Animations with Framer Motion
-- Copy-to-clipboard functionality
-- Fully responsive (mobile + desktop)
-- Deployed via GitHub Actions
-
-## 🚀 Live URL
+## ✨ Live URL
 
 **https://habibzz01.github.io/xbibz-portfolio/**
 
-## 📦 Deployment (GitHub Pages + GitHub Actions)
+## 🎨 Custom 404 Page
 
-This project is configured to deploy **automatically** to GitHub Pages using GitHub Actions.
+The site now features a beautiful animated 404 page using **Lottie**:
 
-### How it works:
-- Every push to `main` triggers the workflow
-- GitHub Actions builds the static Next.js site (`npm run build`)
-- The `out/` folder is deployed to GitHub Pages
+- Uses the custom Lottie animation (`error404.json`)
+- Fully responsive and matches the dark aesthetic
+- Includes "Return Home" and "Explore Projects" buttons
+- Works perfectly on GitHub Pages
 
-### Workflow file
-Located at: `.github/workflows/deploy.yml`
+## 🚀 Deployment
 
-### Important Notes
-- Uses `output: "export"` (required for GitHub Pages)
-- Fully functional client-side React app (modals, animations, etc. all work)
-- GitHub Pages only supports static hosting
+Automatically deployed to **GitHub Pages** using **GitHub Actions**.
+
+### Workflow
+- Push to `main` → triggers build
+- Next.js static export (`output: "export"`)
+- Deploys the `out/` folder
 
 ## 🛠️ Local Development
 
@@ -41,19 +33,21 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000
-
 ## Build
 
 ```bash
 npm run build
 ```
 
+## Tech Stack
+
+- Next.js 16 (App Router + Static Export)
+- React 19 + TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lottie React (for 404 animation)
+- Sonner (toasts)
+
 ## Repository
 
-- GitHub: https://github.com/Habibzz01/xbibz-portfolio
-- Deployed with GitHub Actions
-
----
-
-**Note**: The site is deployed as a static export. All interactivity (project modals, animations, navigation) works client-side. This is the standard and best way to host Next.js on GitHub Pages.
+https://github.com/Habibzz01/xbibz-portfolio
